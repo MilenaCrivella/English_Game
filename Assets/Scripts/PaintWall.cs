@@ -1,15 +1,19 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PaintWall : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public GameObject ChooseColor2; 
+
+	void OnMouseDown()
+	{
+		if (this.gameObject.name == "Brush") ChooseColor2.SetActive (true);
+		if (this.gameObject.name == "Blue") 
+		{
+			Debug.Log ("ooi");
+			ChooseColor2.SetActive (false);
+		}
 	}
 }
