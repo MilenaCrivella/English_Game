@@ -14,7 +14,7 @@ public class CatchingObjects : MonoBehaviour {
         this.transform.position = new Vector2(7.5f, -4);
     }
 
-    void OnCollisionEnter2D(Collision2D coll)
+    void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.name.Equals("Cobweb"))
         {
